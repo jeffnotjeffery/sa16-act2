@@ -1,0 +1,7 @@
+<h1>My Progression over the years</h1>
+<% @workhistory.each do |workhistory| %>
+  <div class="workhistory">
+    <h2><%= workhistory[:title] %></h2>
+    <p><%= workhistory[:description] %></p>
+  </div>
+<% end %>

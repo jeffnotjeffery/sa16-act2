@@ -1,0 +1,10 @@
+<h1>Contact Me</h1>
+<p><strong>Just So You Know:</strong> <%= @contact_details[:quote] %></p>
+<p><strong>Email:</strong> <%= @contact_details[:email] %></p>
+<p><strong>Phone:</strong> <%= @contact_details[:phone] %></p>
+<p><strong>Social Media:</strong></p>
+<ul>
+  <% @contact_details[:social_media].each do |platform, link| %>
+    <li><a href="<%= link %>"><%= platform.to_s.capitalize %></a></li>
+  <% end %>
+</ul>
