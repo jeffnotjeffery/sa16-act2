@@ -7,4 +7,7 @@
   <% @contact_details[:social_media].each do |platform, link| %>
     <li><a href="<%= link %>"><%= platform.to_s.capitalize %></a></li>
   <% end %>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About Me', about_path %></li>
+    <li><%= link_to 'My Work', work_path %></li>
 </ul>

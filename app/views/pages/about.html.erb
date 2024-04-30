@@ -4,3 +4,8 @@
 <p><strong>Skills:</strong> <%= @skills.join(",") %></p>
 <p><strong>Achievements:</strong> <%= @achieved %></p>
 
+<ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'My Work', work_path %></li>
+    <li><%= link_to 'Contact Me', contact_path %></li>
+  </ul>
